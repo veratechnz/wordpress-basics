@@ -4,11 +4,10 @@ add_action( 'wp_enqueue_scripts', 'child_theme_actions' );
 
 function child_theme_actions() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-}
-
+}	
 
 // ***
-// This will add the custom js file. ***You need to add the file to your child theme for it to work. /js/custom.js
+// This will add the custom js file. ***You need to add a custom.js file to your child theme for it to work===> /js/custom.js
 // add_action( 'wp_enqueue_scripts', 'add_custom_js' );
 
 // // The function will add a custom.js to your child theme directory
